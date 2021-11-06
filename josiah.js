@@ -34,7 +34,7 @@ class JosiahExtension {
           },
           {
             opcode: 'closeto',
-            blockType: Scratch.Blocktype.BOOLEAN,
+            blockType: Scratch.BlockType.BOOLEAN,
             text: '[NumF] is close to [NumS]',
             arguments: {
                 NumF: {
