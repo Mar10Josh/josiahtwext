@@ -48,7 +48,7 @@ class JosiahExtension {
             },
               {
              opcode: 'evaljs',
-              blockType: Scratch.BlockType.COMMAND,
+              blockType: Scratch.BlockType.REPORTER,
               text: 'Evaluate Javascript [code]',
               arguments: {
                 code: {
