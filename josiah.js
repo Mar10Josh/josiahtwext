@@ -45,6 +45,17 @@ class JosiahExtension {
                     type: Scratch.ArgumentType.NUMBER,
                     defaultValue: 2
                 }
+            },
+              {
+             opcode: 'evaljs',
+              blockType: Scratch.BlockType.COMMAND,
+              text: 'Evaluate Javascript [code]',
+              arguments: {
+                code: {
+                  type: Scratch.ArgumentType.STRING,
+                  defaultValue: '1 + 1'
+                }
+              }
             }
           },
         ]
@@ -65,6 +76,9 @@ class JosiahExtension {
     }
     closeto(args) {
         return args.NumF == args.NumS - 1 || args.NumF == args.NumS - 2 || args.NumF == args.NumS + 1 || args.NumF == args.NumS + 2
+    }
+    evaljs(args){
+      return eval(args.code)
     }
   }
   
