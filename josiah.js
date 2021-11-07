@@ -37,16 +37,16 @@ class JosiahExtension {
             blockType: Scratch.BlockType.BOOLEAN,
             text: '[NumF] is close to [NumS]',
             arguments: {
-                NumF: {
-                    type: Scratch.ArgumentType.NUMBER,
-                    defaultValue: 1
-                },
-                NumS: {
-                    type: Scratch.ArgumentType.NUMBER,
-                    defaultValue: 2
-                }
+              NumF: {
+               type: Scratch.ArgumentType.NUMBER,
+               defaultValue: 1
+              },
+              NumS: {
+               type: Scratch.ArgumentType.NUMBER,
+               defaultValue: 2
+              }
             }
-          },
+          }
         ]
       };
     }
